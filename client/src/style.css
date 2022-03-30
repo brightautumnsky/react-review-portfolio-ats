@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap");
+
+body {
+  background: #ffffff;
+  font-weight: 600;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+/* Navbar */
+.nav-container {
+  justify-content: space-between;
+  padding: 0px 24px;
+}
+.nav-logobox {
+  width: 250px;
+}
+.nav-toggle {
+  display: none;
+}
+/* LeftMenu */
+.leftmenu-container {
+  display: flex;
+  gap: 6px 24px;
+  align-items: center;
+}
+
+/* LandingPage */
+.landing-img {
+  height: 16rem;
+  bottom: 3.5rem;
+  right: 3.5rem;
+}
+.landing-section-1 {
+  width: 80%;
+  display: flex;
+}
+.landing-section-1 p {
+  font-size: 1.3rem;
+}
+.landing-gridcard {
+  gap: 32px;
+  width: 50%;
+  justify-self: center;
+}
+.landing-gridcard p {
+  font-size: 1.2rem;
+}
+
+/* Footer */
+.footer-container {
+  box-sizing: border-box;
+  width: 100%;
+  flex-direction: row;
+  padding: 36px 96px;
+}
+.footer-container {
+  line-height: 0.7rem;
+}
+.footer-logo {
+  width: 50%;
+}
+.footer-menu {
+  display: flex;
+  gap: 0 24px;
+}
+.footer-menu-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.footer-iconbox {
+  display: flex;
+}
+
+/* FileUpload */
+.fileupload-container {
+  flex-direction: row;
+  gap: 0 36px;
+}
+
+/* UploadPage */
+.upload-formbox {
+  flex-direction: row;
+  gap: 2rem;
+}
+.upload-formbox span {
+  font-size: 1.1rem;
+}
+
+/* ClosingPage */
+.closing-daybox {
+  width: 400px;
+}
+.closing-notice {
+  font-size: 1.1rem;
+  color: red;
+}
+.closing-title {
+  font-size: 1.5rem;
+}
+
+/* GalleryPage */
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 280px);
+  grid-template-rows: repeat(2, 280px);
+  grid-auto-columns: 280px;
+  grid-auto-rows: 280px;
+  gap: 36px;
+}
+
+/* ExpPage */
+.exp-menu {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+.exp-card-container {
+  grid-template-columns: repeat(4, 250px);
+  grid-template-rows: repeat(2, 250px);
+}
+.checkbox-container {
+  width: 450px;
+  gap: 12px 36px;
+}
+
+@media screen and (max-width: 1024px) {
+  /* ExpPage */
+  .exp-card-container {
+    grid-template-columns: repeat(3, 250px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Navbar */
+  .nav-container {
+    justify-content: flex-start;
+    padding-left: 24px;
+    padding-right: 72px;
+  }
+  .nav-logobox {
+    width: 100px;
+  }
+  .nav-toggle {
+    cursor: pointer;
+    position: absolute;
+    font-size: 1.2rem;
+    top: 40%;
+    right: 5%;
+    display: block;
+  }
+  /* LeftMenu */
+  .leftmenu-container {
+    display: none;
+  }
+  /* SpaceBox */
+  .spacebox {
+    display: none;
+  }
+
+  /* LandingPage */
+  .landing-img {
+    height: 7rem;
+    bottom: 3.5rem;
+    right: 3.5rem;
+  }
+  .landing-section-1 {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  .landing-section-1 p {
+    font-size: 1rem;
+  }
+  .imgBox {
+    display: flex;
+    justify-content: center;
+  }
+  .landing-gridcard {
+    width: 80%;
+    gap: 12px;
+    padding: 0 12px;
+  }
+  .landing-gridcard p {
+    font-size: 0.8rem;
+    text-align: justify;
+  }
+
+  /* Footer */
+  .footer-container {
+    padding: 24px;
+    flex-direction: column;
+  }
+  .footer-container p {
+    padding: 0;
+    margin: 0;
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+  }
+  .footer-logo {
+    width: 13%;
+  }
+  .footer-menu-box {
+    padding-top: 12px;
+  }
+  .footer-menu {
+    flex-direction: column;
+  }
+  .footer-menu a {
+    font-size: 0.8rem;
+  }
+  .footer-menu a img {
+    margin: 0;
+  }
+  .footer-iconbox {
+    display: none;
+  }
+
+  /* Utils */
+  /* FileUpload */
+  .fileupload-container {
+    flex-direction: column;
+  }
+
+  /* LoginPage */
+  .login-title {
+    font-size: 0.8rem;
+  }
+
+  /* UploadPage */
+  .upload-formbox {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .upload-formbox span {
+    font-size: 1rem;
+  }
+
+  /* ClosingPage */
+  .closing-daybox {
+    width: 85%;
+  }
+  .closing-title {
+    font-size: 1.2rem;
+  }
+
+  /* GalleryPage */
+  .gallery-container {
+    display: grid;
+    grid-template-columns: repeat(1, 280px);
+    gap: 24px;
+  }
+  .gallery-title {
+    font-size: 1.2rem;
+  }
+
+  /* DetailPage */
+  .detail-box {
+    flex-direction: column;
+    gap: 36px 0;
+  }
+
+  /* ExpPage */
+  .exp-menu {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .exp-card-container {
+    grid-template-columns: repeat(1, 250px);
+  }
+  .checkbox-container {
+    width: 320px;
+    gap: 12px;
+  }
+  .exp-title {
+    font-size: 1.2rem;
+  }
+}
